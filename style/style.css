@@ -97,7 +97,7 @@ a.nav-link.font-color-white:hover{
 .item{
     border-bottom: 3px solid transparent;
 }
-.item:hover{
+ul.item:hover{
     border-bottom: 0px solid transparent;
 }
 
@@ -106,3 +106,221 @@ ul.navbar-nav.item li:hover{
     border-color: unset;
     cursor: pointer;
 }
+
+.margin-bottom{
+    margin-bottom: 10px;
+}
+
+.text-center{
+    text-align: center;
+    height: 50px;
+}
+
+.info-box{
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+
+.table-box{
+    padding-right: 30px;
+    margin-right: auto;
+}
+
+.overflow{
+                
+    overflow-x: auto;
+    
+}
+
+.line{
+    height: auto;
+    border-left: 1px solid #c9c4c4;
+    padding-left: 24px;
+    padding-right: 7px;
+}
+
+.table-size{
+    width:700px;
+}
+.table{
+    border-spacing: 0px;
+}
+.table thead tr th{
+    
+    height: 36px;
+    border-bottom: 1px #c9c4c4 solid;
+    border-top: 1px lightgray solid;
+    font-weight: 100;
+    text-align: center;
+}
+.table tbody tr td{
+    border-bottom: 1px lightgray solid;
+}
+.teams{
+    text-align: left;
+    border-right: 1px #c9c4c4 solid;
+}
+.table tbody tr td:nth-child(odd):not(:first-child){
+    background-color: #f5f5f5;;
+}
+.stadium-name{
+    font-family: sans-serif;
+    font-size: 12px;
+    padding-left: 30px;
+    padding-right: 5px;
+}
+
+.defeat{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: red;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+.victory{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: green;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+.draw{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: gray;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.ranking{
+    font-weight: bold;
+    color: aqua;
+}
+
+.games{
+    width: 100%;
+
+}
+.round-selection-bar-arrow{
+    width: 24px;
+    height: 30px;
+}
+.round-selection-bar{
+    display: flex;
+    font-size: 24px;
+    font-weight: bold;
+    justify-content: space-around;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    border-top:1px solid lightgray;
+    border-bottom:1px solid lightgray;
+}
+.game{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    border-bottom:1px solid lightgray;
+    padding-bottom: 5px;
+    height: 95px;
+}
+.place-time{
+    display: flex;
+    padding: 7px;
+    font-family: sans-serif;
+    font-size: 12px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.in-game{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.playing-team{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+}
+.playing-team div{
+    margin-left:5px;
+    margin-right:5px;
+}
+.matchInfo{
+    font-size: 14px;
+    padding-right: 30px;
+}
+
+@media (max-width:1199px){
+    .container-right{
+        display: none;
+    }
+
+    .info-box{
+        margin:1%;
+        width: 100%;
+
+    }
+    .table-size{
+        width: 750px;
+    }
+}
+
+@media (max-width:1064px){
+
+}
+
+@media (max-width: 1022px) { 
+    .info-box{
+        display: block;
+    }
+    .line{
+        display: none;
+    };
+    .table-box{
+        width: 100%
+    }
+    .games{
+        width: 100%;
+
+    }
+    .table-box{
+        width: 90%;
+    }
+    
+    .table-box{
+        padding-right: 0px;
+        width: 100%;
+    }
+    .in-game{
+        justify-content: center;
+        font-size: 30px;
+        font-family: sans-serif;
+    }
+    img{
+        height: 60px;
+        width: 60px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .table-size{
+        width: 950px;
+    }
+    .game{
+        height: 140px;
+    }
+}
+
+@media (max-width:  767px){
+    .table-size{
+        width: 750px;
+    }
+ }
+
