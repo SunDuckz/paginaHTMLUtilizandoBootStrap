@@ -2,7 +2,21 @@ body{
     margin: 0px;
 }
 
-.disp-flex{
+
+.flex{
+    display: flex;
+}
+
+
+/* .margin-x-axis-auto{
+    margin: 0px auto;
+} */
+
+.justify-center{
+    justify-content: center;
+}
+
+.disp-flex-center{
     display: flex;
     align-items: center;
 }
