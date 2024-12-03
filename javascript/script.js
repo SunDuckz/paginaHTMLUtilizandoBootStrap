@@ -90,7 +90,7 @@
                         // objetivo de estudo;
                         var diaDaSemanaDescricao = retornaDiaDaSemanaDescricao(dateDay);
 
-                        var gameAdd = "<div class='game'>" +
+                        var gameAdd = "<li class='game'>" +
                                             "<div class='place-time'>" +
                                                 // <!-- Estadio -->
                                                 "<div class='stadium-name'>"+ infoPartidas.estadio.nome_popular +"</div>" +
@@ -98,19 +98,23 @@
                                             "</div>" +
                                             "<div class='in-game'>" + 
                                                 "<div class='playing-team'>" +
-                                                    "<div>"+infoPartidas.time_mandante.sigla+"</div>" +
-                                                    "<img src="+infoPartidas.time_mandante.escudo+" alt='' height='30' width='30'>" +
+                                                        "<div>"+infoPartidas.time_mandante.sigla+"</div>" +
+                                                        "<img src="+infoPartidas.time_mandante.escudo+" alt='' height='30' width='30'>" +
+                                                    "</div>" +
+                                                    "<div>" +
+                                                        "<strong>"+ infoPartidas.placar_mandante +" </strong>" +
+                                                        "<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-x-lg' viewBox='0 0 16 16'> <path d='M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z'/></svg>" +
+                                                        "<strong> "+ infoPartidas.placar_visitante +"</strong>"+
+                                                    "</div>" +
+                                                "<div class='playing-team'>" +
+                                                    "<img src="+ infoPartidas.time_visitante.escudo +" alt='' height='30' width='30'>" +
+                                                    "<div>"+infoPartidas.time_visitante.sigla +"</div>" + 
                                                 "</div>" +
-                                                "<div>" +
-                                                    "<strong>"+ infoPartidas.placar_mandante +" </strong>" +
-                                                    "<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-x-lg' viewBox='0 0 16 16'> <path d='M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z'/></svg>" +
-                                                    "<strong> "+ infoPartidas.placar_visitante +"</strong>"+
-                                                "</div>" +
-                                            "<div class='playing-team'>" +
-                                                "<img src="+ infoPartidas.time_visitante.escudo +" alt='' height='30' width='30'>" +
-                                                "<div>"+infoPartidas.time_visitante.sigla +"</div>" +         
-                                            "</div>" +
-                                        "</div>"
+                                            "</div>" +   
+                                            "<div class='flex justify-center margin-bottom'>" + 
+                                                "<a href='#' class='game-info'> Fique por Dentro </a>"+
+                                            "</div>"+       
+                                        "</li>"
 
                                     
                                 games.innerHTML += gameAdd;  
