@@ -111,7 +111,7 @@
                                                     "<div>"+infoPartidas.time_visitante.sigla +"</div>" + 
                                                 "</div>" +
                                             "</div>" +   
-                                            "<div class='flex justify-center margin-bottom'>" + 
+                                            "<div class='d-flex justify-center margin-bottom'>" + 
                                                 "<a href='#' class='game-info'> Fique por Dentro </a>"+
                                             "</div>"+       
                                         "</li>"
